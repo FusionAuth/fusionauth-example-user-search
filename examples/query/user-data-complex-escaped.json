@@ -1,0 +1,1 @@
+"{\"bool\": {\n      \"must\": {\n        \"match\": {\n          \"data.Company\": \"PiedPiper\"\n        }\n      },\n      \"must_not\": {\n        \"term\": {\n          \"email\": \"erlich*\"\n        }\n      }\n    }}\n"

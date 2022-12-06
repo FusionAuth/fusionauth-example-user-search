@@ -29,5 +29,14 @@ The FusionAuth configuration files also make use of a unique feature of FusionAu
 To run, do the following:
 
 * In one shell, run `docker-compose up`
-* In another shell, `cd examples`. Then examine and run each example.
+* In another shell, `cd examples`. There are three directories, one for each kind of search. 
+
+There is one shell script, `examples/search.sh` that you can run. It takes an argument of a `-request.json` file.
+
+* `examples/search.sh examples/ids/ids-request.json` runs the ids search
+* `examples/search.sh examples/query/user-data-simple-request.json` runs one of the query searches
+
+## More
+
+You can read through the corresponding tutorial at TBD
 

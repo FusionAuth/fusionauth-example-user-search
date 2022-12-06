@@ -1,0 +1,15 @@
+{
+  "search": {
+    "numberOfResults": 50,
+    "query": "{\"bool\": {\n      \"must\": {\n        \"match\": {\n          \"data.Company\": \"PiedPiper\"\n        }\n      },\n      \"must_not\": {\n        \"term\": {\n          \"email\": \"nelson*\"\n        }\n      }\n    }\n}",
+    
+    "sortFields": [
+      {
+        "missing": "_first",
+        "name": "email",
+        "order": "asc"
+      }
+    ],
+    "startRow": 0
+  }
+}

@@ -1,0 +1,12 @@
+{"bool": {
+      "must": {
+        "match": {
+          "data.Company": "PiedPiper"
+        }
+      },
+      "must_not": {
+        "term": {
+          "email": "erlich*"
+        }
+      }
+    }}
