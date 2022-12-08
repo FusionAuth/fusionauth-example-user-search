@@ -2,7 +2,7 @@
     "variables": {
         "applicationId": "E9FDB985-9173-4E01-9D73-AC2D60D1DC8E",
         "apiKey": "90d8fb62-6f13-47d4-8ef6-1c3e687883c6",
-        "adminEmail": "admin@fusionauth.io",
+        "adminEmail": "admin@example.com",
         "password": "password",
         "defaultTenantId": "30663132-6464-6665-3032-326466613934"
     },
@@ -190,8 +190,6 @@
           ]
         }
       }
-    },
-
-
+    }
     ]
 }
