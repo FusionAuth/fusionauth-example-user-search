@@ -1,12 +1,44 @@
-{"bool": {
-      "must": {
-        "match": {
-          "data.Company": "PiedPiper"
+{
+  "bool": {
+    "must": [
+      {
+        "range": {
+          "data.Salary": {
+            "lt": 100000
+          }
         }
       },
-      "must_not": {
-        "term": {
-          "email": "erlich*"
+      {
+        "match": {
+          "data.Company": {
+            "query": "PiedPiper"
+          }
+        }
+      },
+      {
+        "match": {
+          "verified": {
+            "query": true
+          }
+        }
+      },
+      { 
+        "nested" : {
+        "path" : "registrations",
+        "query" : {
+          "bool" : {
+            "must" : [ {
+              "match" : {
+                "registrations.applicationId" : "e9fdb985-9173-4e01-9d73-ac2d60d1dc8e"
+              },
+              "match" : {
+                "registrations.data.paid" : false
+              }
+            } ]
+          }
         }
       }
-    }}
+      }
+    ]
+  }
+}
