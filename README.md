@@ -38,5 +38,5 @@ There is one shell script, `examples/search.sh` that you can run. It takes an ar
 
 ## More
 
-You can read through the corresponding tutorial at TBD
+Here's a [FusionAuth user search guide](https://fusionauth.io/docs/v1/tech/guides/user-search-with-elasticsearch) which corresponds to this example application.
 
