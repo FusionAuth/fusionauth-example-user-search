@@ -1,5 +1,8 @@
 # Example: Using FusionAuth User Search
 
+> [!WARNING]
+> This repository is generated from content that lives at [github.com/FusionAuth/fusionauth-site](https://github.com/FusionAuth/fusionauth-site/tree/main/astro/extractedcode/example-user-search). Changes to files here _will be overwritten by that automation_. File an issue or pull request with [fusionauth-site](https://github.com/FusionAuth/fusionauth-site) instead.
+
 This example shows shell scripts illustrating how to use FusionAuth's powerful user search.
 
 ## Prerequisites
@@ -29,7 +32,7 @@ The FusionAuth configuration files also make use of a unique feature of FusionAu
 To run, do the following:
 
 * In one shell, run `docker-compose up`
-* In another shell, `cd examples`. There are three directories, one for each kind of search. 
+* In another shell, `cd examples`. There are three directories, one for each kind of search.
 
 There is one shell script, `examples/search.sh` that you can run. It takes an argument of a `-request.json` file.
 
